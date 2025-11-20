@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arctic Adventure & Cabin Resort</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; font-family: 'Montserrat', sans-serif; }
+    body {
+      background: url('northern-lights-1.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      line-height: 1.6;
+    }
+    nav {
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:1rem 2rem;
+      background: rgba(0,0,0,0.5);
+      position: sticky;
+      top:0;
+      z-index: 100;
+    }
+    nav a { color:#fff; text-decoration:none; margin-left:1.5rem; font-weight:600; }
+    nav a:hover { color:#ffcc00; }
+    .hero {
+      height: 100vh;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      background: rgba(0,0,0,0.5);
+    }
+    .hero h1 { font-size:3rem; margin-bottom:1rem; }
+    .hero p { font-size:1.5rem; max-width:700px; margin-bottom:2rem; }
+    .hero video {
+      width:80%;
+      max-width:900px;
+      border-radius:20px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.5);
+    }
+    section {
+      padding:5rem 2rem;
+      background: rgba(0,0,0,0.5);
+    }
+    h2 { font-size:2.5rem; margin-bottom:2rem; text-align:center; color:#ffcc00; }
+    .activities {
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap:2rem;
+    }
+    .card {
+      background: rgba(255,255,255,0.1);
+      padding:2rem;
+      border-radius:15px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow:0 10px 25px rgba(0,0,0,0.5);
+    }
+    .card h3 { margin-bottom:1rem; color:#fff; }
+    .card p { color:#ddd; }
+    footer {
+      text-align:center;
+      padding:2rem;
+      background: rgba(0,0,0,0.7);
+      margin-top:2rem;
+    }
+    .booking {
+      text-align:center;
+      margin-top:3rem;
+    }
+    .booking a {
+      padding:1rem 2rem;
+      background:#ffcc00;
+      color:#000;
+      text-decoration:none;
+      font-weight:700;
+      border-radius:10px;
+      transition: background 0.3s ease;
+    }
+    .booking a:hover { background:#e6b800; }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo"><h2>Arctic Adventure</h2></div>
+    <div class="menu">
+      <a href="#winter">Winter Activities</a>
+      <a href="#summer">Summer Activities</a>
+      <a href="#cabins">Cabins & Spa</a>
+      <a href="#contact">Booking</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>Experience Övertorneå Like Never Before</h1>
+    <p>Cabins bring accommodation money • Adventures bring high activity income • Sauna & spa bring wellness tourism • Works all year</p>
+    <video controls autoplay loop muted>
+      <source src="arctic-winter-summer.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <section id="winter">
+    <h2>Winter Activities</h2>
+    <div class="activities">
+      <div class="card">
+        <h3>Northern Lights Tours</h3>
+        <p>Experience the magical auroras in comfort and style.</p>
+      </div>
+      <div class="card">
+        <h3>Snowmobile Safaris</h3>
+        <p>Adventure across frozen landscapes with expert guides.</p>
+      </div>
+      <div class="card">
+        <h3>Husky Tours</h3>
+        <p>Partner with local dog farms for thrilling sled rides.</p>
+      </div>
+      <div class="card">
+        <h3>Ice Fishing & Snowshoe Tours</h3>
+        <p>Enjoy peaceful moments in the winter wilderness.</p>
+      </div>
+      <div class="card">
+        <h3>Winter Forest Experiences</h3>
+        <p>Explore serene snowy forests and nature trails.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="summer">
+    <h2>Summer Activities</h2>
+    <div class="activities">
+      <div class="card">
+        <h3>Midnight Sun Tours</h3>
+        <p>Witness the magical Arctic sun that never sets.</p>
+      </div>
+      <div class="card">
+        <h3>Fishing & Canoe/Kayak Tours</h3>
+        <p>Enjoy tranquil rivers and lakes under the midnight sun.</p>
+      </div>
+      <div class="card">
+        <h3>Hiking & Nature Safaris</h3>
+        <p>Discover wildlife like moose and reindeer in their natural habitat.</p>
+      </div>
+      <div class="card">
+        <h3>Berry Picking Experiences</h3>
+        <p>Taste the authentic flavors of the Arctic wilderness.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="cabins">
+    <h2>Luxury Cabins & Sauna Spa</h2>
+    <div class="activities">
+      <div class="card">
+        <h3>Glass-Roof Cabins</h3>
+        <p>Watch auroras from the comfort of warm, cozy cabins.</p>
+      </div>
+      <div class="card">
+        <h3>Sauna & Jacuzzi Under the Stars</h3>
+        <p>Relax and rejuvenate after a day of adventures.</p>
+      </div>
+      <div class="card">
+        <h3>Winter & Summer Experiences</h3>
+        <p>Cabins work all year — from snow-covered retreats to midnight sun escapes.</p>
+      </div>
+    </div>
+    <div class="booking">
+      <a href="#contact">Book Your Stay</a>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>© 2025 Arctic Adventure & Cabin Resort | Övertorneå, Sweden</p>
+  </footer>
+</body>
+</html>
